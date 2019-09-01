@@ -1,0 +1,312 @@
+/*---------------------------*/
+/*basic setup*/
+/*---------------------------*/
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html,body{
+	background-color:#fff;
+	color:#555;
+	font-family: 'lato','arial','san-serif';
+	font-weight:300;
+	font-size:20px;
+	text-rendering:optimizeLegibility;
+	overflow-x: hidden;
+} 
+
+/*---------------------------*/
+/*resuable compnents*/
+/*---------------------------*/
+
+.row{
+	max-width:1140px;
+	margin: 0 auto;
+}
+
+section{
+	padding: 80px 0;
+}
+.box{
+	padding: 2%;
+}
+
+/*headings*/
+
+h1,h2,h3{
+	font-weight:300;
+	text-transform:uppercase;
+	letter-spacing: 1px;
+
+	
+
+} 
+
+h1{
+	margin:0;
+	color:#fff;
+	font-size:240%;
+	word-spacing: 4px;
+}
+
+h2{
+	/* font-size: 180%; */
+	/* word-spacing:2px;  */
+	text-align:center;
+	color:red;
+	margin-bottom: 30px;
+	font-weight: 500;
+}
+
+h2:after{
+	display: block;
+	height:2px;
+	background-color: black;
+	content:" ";
+	width:100px;
+	margin:0 auto;
+	margin-top: 20px;
+}
+
+h3{
+	font-size: 100%;
+	margin-bottom: 15px;
+	color:black;
+}
+
+/*pragraph*/
+.long-copy{
+	line-height: 145%;
+	width:70%;
+	margin-left: 15%;
+	
+
+}
+.box p{
+	font-size: 85%;
+	line-height: 145%
+}
+
+/*button*/
+
+.btn:link,
+.btn:visited{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn1:link,
+.btn1:visited{
+	background-color: #e60000;
+	border:1px solid#e60000;
+	color:#fff;
+}
+
+.btn2:link,
+.btn2:visited{
+	color: #fff;
+	border:1px solid #fff;
+}
+
+.btn:hover,
+.btn:active{
+	background-color: #e60000;
+}
+
+.btn1:hover,
+.btn1:active{
+	border:1px solid #e60000;
+}
+
+.btn1:hover,
+.btn1:active{
+	border:1px solid#e60000;
+	color:#fff;
+}
+
+/*header*/
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hm.jpg);
+	background-size:cover;
+	background-position: center;
+	height: 100vh;
+}
+nav{
+	background-color: #e60000;
+}
+
+.hero-text-box{
+	position: absolute;
+	width: 1140px;
+	top: 60%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+}
+
+.logo{
+	height:90px;
+	width: auto;
+	float:left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.main-nav{
+	float:right;
+	list-style: none;
+	margin-top: 50px;
+}
+
+
+.main-nav li{
+	display:inline-block;
+	margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	padding:8px 0px;
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 80%;
+	border-bottom: 2px solid transparent;
+	transition :border-bottom o.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 2px solid #fff;
+}
+
+/*Testomonials*/
+
+.class-testimonials{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/berlin.jpg); 
+	background-size: cover; 
+	color:#fff;
+	background-attachment: fixed;
+}
+.class-testimonials h2{
+	color:#fff;
+	display:block;
+}
+
+blockquote{
+	padding:2%;
+	font-style: italic;
+	line-height: 135%;
+	font-size: 16px;
+	position: relative;
+}
+cite{
+	font-size: 90%;
+	margin-top: 25px;
+	display:block;
+}
+
+blockquote:before{
+	content:"\201C";
+	font-size: 500%;
+	display: block;
+	position: absolute;
+	top: -5;
+	left: -5;
+}
+cite img{
+	height:45px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+/*footer*/
+footer{
+	background-color: #333;
+	padding: 25px;
+}
+
+.footer-nav{
+	list-style: none;
+	float: left;
+}
+
+.social-link{
+	list-style: none;
+	float: right;
+}
+
+.footer-nav li,
+.social-link li{
+	display:inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-link li:last-child{
+	margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited{
+	text-decoration: none;
+	border: 0;
+	color:#fff;
+	font-size: 16px;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+ color:#ddd;
+}
+
+footer p{
+	color:#ddd;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+form{
+	margin-top: 50px;
+}
+.contact{
+	text-align: center;
+}
+
+
+.form-control{
+	width:600px;
+	background:transparent;
+	border:none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	font-size:18px;
+	margin-bottom: 16px;
+	
+}
+input{
+	height: 45px;
+}
+form .submit{
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px 20px;
+	font-weight: 200px;
+	text-decoration: none;
+	border-radius: 100px;
+	background: red;
+	cursor: pointer;
+	
+}
